@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 
 public class MainThread {
 
-    private final static Logger LOGGER = Logger.getLogger(ClientThread.class.getName());
+    private final static Logger LOGGER = Logger.getLogger(MainThread.class.getName());
 
     public static void main(String []args){
 

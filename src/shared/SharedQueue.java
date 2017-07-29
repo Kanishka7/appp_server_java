@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 
 public class SharedQueue {
 
-    private final static Logger LOGGER = Logger.getLogger(ClientThread.class.getName());
+    private final static Logger LOGGER = Logger.getLogger(SharedQueue.class.getName());
     private static SharedQueue sharedQueue;
     private ArrayBlockingQueue<String> transport = null;
     private int capacity = 0;

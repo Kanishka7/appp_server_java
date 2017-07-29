@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 public class ServerThread implements Runnable{
 
     private SharedQueue queue = null;
-    private final static Logger LOGGER = Logger.getLogger(ClientThread.class.getName());
+    private final static Logger LOGGER = Logger.getLogger(ServerThread.class.getName());
 
     public ServerThread(SharedQueue resource){
         this.queue = resource;

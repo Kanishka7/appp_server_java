@@ -10,7 +10,7 @@ public class ThreadPool {
 
     private int threshold;
     ExecutorService executor = null;
-    private final static Logger LOGGER = Logger.getLogger(ClientThread.class.getName());
+    private final static Logger LOGGER = Logger.getLogger(ThreadPool.class.getName());
     private static ThreadPool pool = null;
 
 
