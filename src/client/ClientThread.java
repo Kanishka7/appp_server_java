@@ -1,8 +1,10 @@
+/**
+ * @author Kanishka.................
+ */
+
 package client;
 
 import shared.SharedQueue;
-
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
@@ -11,6 +13,8 @@ public class ClientThread implements Runnable {
     private final static Logger LOGGER = Logger.getLogger(ClientThread.class.getName());
     private SharedQueue queue = null;
     private volatile int counter = 0;
+    private static final int SLEEP = 3000;
+
     public ClientThread(SharedQueue resource){
         this.queue = resource;
     }
@@ -35,7 +39,7 @@ public class ClientThread implements Runnable {
                 e.printStackTrace();
             }
             try {
-                Thread.sleep(3000);
+                Thread.sleep(SLEEP);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

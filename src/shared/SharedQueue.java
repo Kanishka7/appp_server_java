@@ -1,7 +1,8 @@
+/**
+ * @author Kanishka.................
+ */
+
 package shared;
-
-import client.ClientThread;
-
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.logging.Logger;
 

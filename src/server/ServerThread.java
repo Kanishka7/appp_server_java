@@ -1,6 +1,9 @@
+/**
+ * @author Kanishka.................
+ */
+
 package server;
 
-import client.ClientThread;
 import shared.SharedQueue;
 import java.util.logging.Logger;
 
@@ -8,6 +11,7 @@ public class ServerThread implements Runnable{
 
     private SharedQueue queue = null;
     private final static Logger LOGGER = Logger.getLogger(ServerThread.class.getName());
+    private static final int SLEEP = 4000;
 
     public ServerThread(SharedQueue resource){
         this.queue = resource;
@@ -18,7 +22,7 @@ public class ServerThread implements Runnable{
         while(true) {
             if (this.queue.createdQueue().size() > 0) {
                 try {
-                    Thread.sleep(4000);
+                    Thread.sleep(SLEEP);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

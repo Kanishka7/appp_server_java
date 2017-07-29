@@ -1,6 +1,12 @@
-package Pool;
+/**
+ * @author Kanishka.................
+ */
 
-import client.ClientThread;
+/**
+ * @author Kanishka.................
+ */
+
+package Pool;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
