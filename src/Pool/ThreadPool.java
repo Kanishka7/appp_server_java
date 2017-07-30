@@ -2,9 +2,6 @@
  * @author Kanishka.................
  */
 
-/**
- * @author Kanishka.................
- */
 
 package Pool;
 

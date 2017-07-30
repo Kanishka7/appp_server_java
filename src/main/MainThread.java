@@ -16,11 +16,9 @@ public class MainThread {
     private final static Logger LOGGER = Logger.getLogger(MainThread.class.getName());
     private static final int MIN = 1;
     public static void main(String []args){
-
         LOGGER.info("Main Thread started ---");
         try {
             if (Integer.parseInt(args[0]) > MIN) {
-
                 SharedQueue sharedQueue = SharedQueue.getSharedQueue();
                 sharedQueue.setQueueCapacity(Integer.parseInt(args[0]));
                 ClientThread client = new ClientThread(sharedQueue);
