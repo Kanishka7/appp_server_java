@@ -29,7 +29,7 @@ public class ServerThread implements Runnable{
                 int number = 0;
                 try {
                     String take = this.queue.createdQueue().take();
-                    number = Integer.parseInt(take.replaceAll("[^0-9]", "")); // 123
+                    number = Integer.parseInt(take.replaceAll("[^0-9]", ""));
                     LOGGER.info("Server thread reading from queue ------ REQUEST -> RESPONSE ----- " + take);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
